@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envía Flores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <span class="menu-icon">☰</span>
+        <span class="logo">enviaflores.com</span>
+    </div>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="flor-rosa.jfif" alt="flor-rosa">
+            <h2>Ramo de flores rosas</h2>
+            <p>Precio: $600</p>
+            <button class="add-to-cart" data-price="600">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="girasol.jfif" alt="girasol">
+            <h2>Mix de flores</h2>
+            <p>Precio: $550</p>
+            <button class="add-to-cart" data-price="550">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="rojas.jfif" alt="rojas">
+            <h2>Ramo de flores rojas</h2>
+            <p>Precio: $450</p>
+            <button class="add-to-cart" data-price="450">Agregar al carrito</button>
+        </div>
+    </section>
+     
+    <!-- MODIFICACION DE CODIGO ANGELA-->
+    <aside id="cart">
+        <h2>Tu Carrito</h2>
+        <div id="cart-items"></div> <!-- Aquí se mostrarán los productos -->
+        <p>Total: $<span id="cart-total">0</span></p>
+        <p></p>
+        <label for="discount-code">Código de descuento:</label>
+        <input type="text" id="discount-code">
+        <p></p>
+        <label for="loyalty-points">Puntos de lealtad:</label>
+        <input type="number" id="loyalty-points" value="0">
+        <button id="apply-discount">Aplicar Descuento</button>
+        <button id="checkout">Pagar</button>
+    </aside>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
